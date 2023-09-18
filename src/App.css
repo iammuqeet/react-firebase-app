@@ -9,134 +9,134 @@ body {
     margin: 0;
   }
   
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card,
+.bookCard {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  overflow-y: auto;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5%;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.button,
+.fetch-button,
+.delete-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.fetch-button {
+  background-color: #2196f3;
+  border: none;
+  color: white;
+}
+
+.fetch-button:hover {
+  background-color: #1e87dc;
+}
+
+.delete-button {
+  background-color: #ff0000;
+  border: none;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+.books-list {
+  list-style-type: none;
+  padding: 0;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #252525;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.book-author {
+  font-size: 16px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
   .card,
   .bookCard {
-    width: 400px;
-    height: 500px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
-    overflow-y: auto;
+    width: 90%;
+    height: auto;
   }
-  
-  .heading {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .label {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .input {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5%;
-    width: 80%;
-    margin-bottom: 10px;
-  }
-  
-  .button,
-  .fetch-button,
-  .delete-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .button {
-    background-color: #4caf50;
-    border: none;
-    color: white;
-  }
-  
-  .button:hover {
-    background-color: #45a049;
-  }
-  
-  .fetch-button {
-    background-color: #2196f3;
-    border: none;
-    color: white;
-  }
-  
-  .fetch-button:hover {
-    background-color: #1e87dc;
-  }
-  
-  .delete-button {
-    background-color: #ff0000;
-    border: none;
-    color: white;
-  }
-  
-  .delete-button:hover {
-    background-color: #cc0000;
-  }
-  
-  .books-list {
-    list-style-type: none;
-    padding: 0;
-    overflow-y: auto;
-    height: 100%;
-  }
-  
-  .book-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    padding: 15px;
-    background-color: #252525;
-    color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .book-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .book-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .book-author {
-    font-size: 16px;
-  }
-  
-  /* Media Query for Mobile */
-  @media (max-width: 768px) {
-    .card,
-    .bookCard {
-      width: 90%;
-      height: auto;
-    }
-  }
-  
+}
+

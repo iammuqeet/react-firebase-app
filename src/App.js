@@ -110,12 +110,12 @@ const App = () => {
             />
           </div>
           <button type="submit" className="button">
-            Add Book
+            ADD BOOKS
           </button>
         </form>
 
         <button onClick={handleFetchBooks} className="fetch-button">
-          Fetch Books
+          Fetch BOOKS
         </button>
       </div>
       <div className="bookCard">
@@ -130,7 +130,7 @@ const App = () => {
                 className="delete-button"
                 onClick={() => handleDelete(book.id)}
               >
-                Delete
+                DELETE
               </button>
             </li>
           ))}
